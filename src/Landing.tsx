@@ -19,7 +19,7 @@ const Landing: React.FC = () => {
     exit: { opacity: 0, y: 30 },
     viewport: { once: false, amount: 0.2 },
     transition: { duration: 1.2, ease: "easeOut" }
-  };
+  } as const;
 
   const staggerContainer = {
     initial: { opacity: 0 },
@@ -31,7 +31,7 @@ const Landing: React.FC = () => {
     },
     exit: { opacity: 0 },
     viewport: { once: false, amount: 0.2 }
-  };
+  } as const;
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 font-sans selection:bg-blue-100 selection:text-blue-900">
